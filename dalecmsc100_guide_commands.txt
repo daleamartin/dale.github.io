@@ -1,0 +1,22 @@
+
+POST/save-student
+curl -X POST -H "Content-Type: application/json" -d "{\"stdnum\": \"123456789\", \"fname\": \"John\", \"lname\": \"Doe\", \"age\": 20}" http://localhost:3000/save-student
+
+
+POST /update
+curl -X POST http://localhost:3000/update
+
+POST /remove-user
+curl -X POST -H "Content-Type: application/json" -d "{\"stdnum\": \"123456789\"}" http://localhost:3000/remove-user
+
+POST /remove-all-user
+curl -X POST http://localhost:3000/remove-all-user
+
+GET /user - Search
+curl http://localhost:3000/user?stdnum=123456789
+
+GET /members
+curl http://localhost:3000/members
+
+
+
